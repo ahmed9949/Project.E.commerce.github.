@@ -16,7 +16,7 @@ body{
 }
 
 header{
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -84,9 +84,10 @@ color: #162938;
 }
 
 .wrapper{
+    margin-top: 100px;
     position: relative;
     width: 400px;
-    height: 440px;
+    height: 400px;
     background: transparent;
     border: 2px solid rgba(255,255,255,.5);
     border-radius: 20px;
@@ -95,7 +96,18 @@ color: #162938;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease ,height .2s ease;
+}
+
+/* css for the button in the home page to show the form */
+.wrapper.active-popup{
+    transform: scale(1);
+}
+
+.wrapper.active{
+height: 520px;
 }
 
 .wrapper .close-icon{
@@ -118,12 +130,24 @@ z-index: 1;
 }
 
 .wrapper .form-box.login{
-    /* display:none ; */
+    transition: transform .18 ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
 }
 
 .wrapper .form-box.register{
     position: absolute ;
+    transition: none;
     transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .18 ease;
+    transform: translateX(0);
 }
 
 .from-box h2{

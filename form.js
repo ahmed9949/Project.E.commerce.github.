@@ -1,3 +1,33 @@
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.loginlink');
+const registerLink = document.querySelector('.registerlink');
+const closeicon = document.querySelector('.close-icon');
+
+// to link the button (login) in home page with the form
+const btnpopup = document.querySelector('.btnlogin');
+
+registerLink.addEventListener('click',()=>{
+    wrapper.classList.add('active');
+});
+
+loginLink.addEventListener('click',()=>{
+    wrapper.classList.remove('active');
+});
+
+closeicon.addEventListener('click',()=>{
+    wrapper.classList.remove('active-popup');
+});
+
+// to link the button (login) in home page with the form
+btnpopup.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+})
+
+
+
+
+
+
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
