@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sacrab </title>
+    <link rel="stylesheet" href="cart-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo scarab.jpg" width="100px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a class="same" href="homepage.html"> Home </a></li>
+                    <li> <a class="same" href="products.html"> Products</a></li>
+                    <li> <a class="same" href=""> About </a></li>
+                    <li> <a class="same" href=""> Contact </a></li>
+                    <li> <a class="same" href=""> Service</a></li>
+                </ul>
+            </nav>
+            
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" style="cursor: pointer;"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<div class="small-container cart-box">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-1.jpg" alt="error">
+                    <div>
+                        <p>Red Shirt</p>
+                        <small>Price: 45.99$</small><br>
+                        <a class="media-links" href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input class="box-range"  type="number" value="1"></td>
+            <td>49.55$</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product-6.jpg" alt="error">
+                    <div>
+                        <p>Red Shirt</p>
+                        <small>Price: 59.99$</small><br>
+                        <a class="media-links" href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input class="box-range"  type="number" value="1"></td>
+            <td>59.89$</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product-5.jpg" alt="error">
+                    <div>
+                        <p>Red Shirt</p>
+                        <small>Price: 99.99$</small><br>
+                        <a class="media-links" href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input class="box-range" type="number" value="1"></td>
+            <td>99.99$</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+<table>
+    <tr>
+        <td>SubTotal:</td>
+        <td>205.97$</td>
+    </tr>
+    <tr>
+        <td>TAX:</td>
+        <td>20.00$</td>
+    </tr>
+    <tr>
+        <td>Total:</td>
+        <td>225.97$</td>
+    </tr>
+</table>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3> Download our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo scarab.jpg">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits 
+                    of Sports Accessible to the Many.  </p>
+            </div>
+            <div class="footer-col-3">
+                <h3> Useful Links</h3>
+                <ul>
+                    <li class="footer-links">Coupons</li>
+                    <li class="footer-links">Blog Post</li>
+                    <li class="footer-links">Return Policy</li>
+                    <li class="footer-links">Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3> Follow us</h3>
+                <ul>
+                    <li><a class="media-links" href="">Facebook</a></li>
+                    <li><a class="media-links" href="">Twitter</a></li>
+                    <li><a class="media-links" href="">Instagram</a></li>
+                    <li><a class="media-links" href="">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023</p>
+    </div>
+</div>
+<!-- js for toggle menu -->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else 
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script> 
+</body>
+</html>

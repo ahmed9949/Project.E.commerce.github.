@@ -48,10 +48,15 @@ nav ul li
     display:inline-block;
     margin-right: 20px;
 }
-/* a{
+ /* a{
     text-decoration: none;
     color:#555;
-} */
+}  */
+
+.media-links:hover{
+    text-decoration: underline;
+    color: red;
+    }
 
 .same{
     position: relative;
@@ -337,6 +342,12 @@ margin-bottom: 20px;
 {
     flex-basis: 12%;
     text-align: center;
+}
+
+.footer-links:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
 }
 ul
 {
