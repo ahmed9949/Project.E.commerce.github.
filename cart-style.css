@@ -295,3 +295,23 @@ th:last-child{
 .box-range{
     cursor: pointer;
 } 
+
+.checkout-btn{
+    margin-right: 430px;
+    margin-top: 30px;
+    background-color: #4e2626; 
+    border:none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    
+
+}
+.checkout-text{
+    margin-top: 0px;
+    color: white;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
