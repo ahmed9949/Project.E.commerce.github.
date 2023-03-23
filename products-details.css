@@ -67,13 +67,22 @@ p
 color:#555;
 }
 
-
 .container
 {
 max-width: 1300px;
 margin:auto;
 padding-left: 25px;
 padding-right: 25px;
+
+}
+
+.header-container
+{
+width: 100%;
+margin:auto;
+padding-left: 25px;
+padding-right: 25px;
+background-color: blanchedalmond;
 }
 
 .row
