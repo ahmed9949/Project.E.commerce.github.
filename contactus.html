@@ -5,11 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="contactus.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="contactus.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+
 <body>
-  <div class="container">
+  <div class="smallcontainer">
     <div class="navbar">
         <div class="logo">
             <img src="images/logo scarab.jpg" width="100px">
@@ -27,19 +29,63 @@
         <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
     </div>
 </div>
+
 	<div class="container">
 		<div class="contact-box">
-			<div class="left"></div>
+			
 			<div class="right">
-				<h2>Contact Us</h2>
-				<input type="text" class="field" placeholder="Your Name">
-				<input type="text" class="field" placeholder="Your Email">
+				<h2> We'll help you as soon as possible</h2>
+                
+				<input type="text" class="field" placeholder="Username">
+				<input type="text" class="field" placeholder="User-Email">
 				<input type="text" class="field" placeholder="Phone">
-				<textarea placeholder="Message" class="field"></textarea>
+				<textarea placeholder="Message Content" class="field"></textarea>
 				<button class="btn">Send</button>
 			</div>
 		</div>
 	</div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> Download our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo scarab.jpg">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits 
+                        of Sports Accessible to the Many.  </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3> Useful Links</h3>
+                    <ul>
+                        <li class="footer-links">Coupons</li>
+                        <li class="footer-links">Blog Post</li>
+                        <li class="footer-links">Return Policy</li>
+                        <li class="footer-links">Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3> Follow us</h3>
+                    <ul>
+                        <li><a class="media-links" href="">Facebook</a></li>
+                        <li><a class="media-links" href="">Twitter</a></li>
+                        <li><a class="media-links" href="">Instagram</a></li>
+                        <li><a class="media-links" href="">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023</p>
+        </div>
+    </div>
+
   <script>
     var MenuItems=document.getElementById("MenuItems");
     MenuItems.style.maxHeight="0px";
