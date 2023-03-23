@@ -461,6 +461,14 @@ select:focus
     color:#fff;
 }
 
+.click-test{
+    color: black;
+    text-decoration: none;
+}
+.click-test:hover{
+    cursor: pointer;
+}
+
 
 
 
