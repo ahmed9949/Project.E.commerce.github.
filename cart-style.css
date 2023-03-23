@@ -33,6 +33,21 @@ a{
     color:#555;
 }
 
+.remove-link{
+    text-decoration:none;
+    font-size: 16px;
+    color: white;
+    background-color: orangered;
+    border-radius: 4px;
+    padding: 3px;
+    /* margin-top: 5px; */
+    }
+
+    .remove-link:hover{
+    text-decoration: none;
+        cursor: pointer;
+    }
+
 .media-links:hover{
 text-decoration: underline;
 color: red;
@@ -314,4 +329,9 @@ th:last-child{
     color: white;
     font-size: 28px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-product{
+    color: black;
+    font-size: 20px;
 }
