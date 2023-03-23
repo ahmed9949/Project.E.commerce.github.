@@ -8,8 +8,8 @@
   }
 
   :root {
-      --blue: #2a2185;
-      --white: #fff;
+      --blue:blanchedalmond;
+      --white: white;
       --gray: #f5f5f5;
       --balck1: #222;
       --black2: #999;
@@ -26,6 +26,16 @@
       position: relative;
       width: 100%;
 
+  }
+
+  .title{
+padding: 10px;
+font-size: 30px;
+  }
+
+  .tittle{
+    margin-top:15px ;
+    
   }
 
   /* navigation  */
@@ -68,6 +78,7 @@
   .navigation ul li:hover,
   .navigation ul li .hovered {
       background-color: var(--white);
+      color:black;
 
   }
 
@@ -77,12 +88,13 @@
       width: 100%;
       display: flex;
       text-decoration: none;
-      color: var(--white);
+      color: var(--balck1);
   }
 
   .navigation ul li :hover a,
   .navigation ul li .hoverd a {
       color: var(--blue);
+      background-color: black;
 
   }
 
@@ -137,6 +149,9 @@
   pointer-events: none;
 }
 
+.img-logo{
+  padding: 10px;
+}
 
 .main {
     position: absolute;
@@ -202,6 +217,7 @@
   
   .user {
     position: relative;
+    font-size: 40px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -209,14 +225,14 @@
     cursor: pointer;
   }
   
-  .user img {
+  /* .user img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */
 
   
 .cardBox {
@@ -226,11 +242,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
+    
   }
   
   .cardBox .card {
     position: relative;
     background: var(--white);
+    
     padding: 30px;
     border-radius: 20px;
     display: flex;
@@ -243,7 +261,7 @@
     position: relative;
     font-weight: 500;
     font-size: 2.5rem;
-    color: var(--blue);
+    color:black;
   }
   
   .cardBox .card .cardName {
@@ -263,5 +281,5 @@
   .cardBox .card:hover .numbers,
   .cardBox .card:hover .cardName,
   .cardBox .card:hover .iconBx {
-    color: var(--white);
+    color:black;
   }
