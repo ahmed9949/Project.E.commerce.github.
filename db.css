@@ -8,8 +8,8 @@
   }
 
   :root {
-      --blue:blanchedalmond;
-      --white: white;
+      --blue: #2a2185;
+      --white: #fff;
       --gray: #f5f5f5;
       --balck1: #222;
       --black2: #999;
@@ -26,16 +26,6 @@
       position: relative;
       width: 100%;
 
-  }
-
-  .title{
-padding: 10px;
-font-size: 30px;
-  }
-
-  .tittle{
-    margin-top:15px ;
-    
   }
 
   /* navigation  */
@@ -78,7 +68,6 @@ font-size: 30px;
   .navigation ul li:hover,
   .navigation ul li .hovered {
       background-color: var(--white);
-      color:black;
 
   }
 
@@ -88,13 +77,12 @@ font-size: 30px;
       width: 100%;
       display: flex;
       text-decoration: none;
-      color: var(--balck1);
+      color: var(--white);
   }
 
   .navigation ul li :hover a,
   .navigation ul li .hoverd a {
       color: var(--blue);
-      background-color: black;
 
   }
 
@@ -149,9 +137,6 @@ font-size: 30px;
   pointer-events: none;
 }
 
-.img-logo{
-  padding: 10px;
-}
 
 .main {
     position: absolute;
@@ -217,7 +202,6 @@ font-size: 30px;
   
   .user {
     position: relative;
-    font-size: 40px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -225,14 +209,14 @@ font-size: 30px;
     cursor: pointer;
   }
   
-  /* .user img {
+  .user img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  } */
+  }
 
   
 .cardBox {
@@ -242,13 +226,11 @@ font-size: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
-    
   }
   
   .cardBox .card {
     position: relative;
     background: var(--white);
-    
     padding: 30px;
     border-radius: 20px;
     display: flex;
@@ -261,7 +243,7 @@ font-size: 30px;
     position: relative;
     font-weight: 500;
     font-size: 2.5rem;
-    color:black;
+    color: var(--blue);
   }
   
   .cardBox .card .cardName {
@@ -281,5 +263,150 @@ font-size: 30px;
   .cardBox .card:hover .numbers,
   .cardBox .card:hover .cardName,
   .cardBox .card:hover .iconBx {
-    color:black;
+    color: var(--white);
   }
+
+
+  .details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+  }
+  .details .recentOrders
+  {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  .details .cardHeader
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .cardHeader h2
+  {
+    font-weight: 600;
+    color: var(--blue);
+  }
+  .cardHeader .btn 
+  {
+    position: relative;
+    padding:  5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+  }
+  .details table
+  {
+    width: 100px;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  .details table thead td
+  {
+    font-weight: 600;
+  }
+  .details .recentOrders table tr
+  {
+    color: var(--balck1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .details .recentOrders table tbody:hover
+  {
+    background: var(--blue);
+    color: var(--blue);
+  }
+  .details .recentOrders table tr td
+  {
+    padding: 10px;
+  }
+  .status.pending
+  {
+    padding: 2px 4px;
+    background: yellow;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .status.delivered
+  {
+    padding: 2px 4px;
+    background: #8de02c;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .status.return
+  {
+    padding: 2px 4px;
+    background: red;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .status.inProgress
+  {
+    padding: 2px 4px;
+    background: blue;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .recentCustomers
+  {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px; 
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  .recentCustomers .imgBx
+  {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .recentCustomers .imgBx img
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .recentCustomers table tr:hover
+  {
+    background: var(--blue);
+    color: var(--white);
+  }
+  .recentCustomers table tr td
+  {
+    padding: 12px 10px;
+  }
+  .recentCustomers table tr td h4
+  {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+
+
