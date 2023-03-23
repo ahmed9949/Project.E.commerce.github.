@@ -28,6 +28,12 @@ background: white;
 color: #162938;
 }
 
+
+p
+{
+color:#555;
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -85,12 +91,6 @@ transition: transform .5s;
     transform-origin: left;
     transform:scaleX(1);
 }
-
-p
-{
-color:#555;
-}
-
 
 .container
 {
